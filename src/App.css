@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root {
+  --font-edu: 'Edu VIC WA NT Beginner',
+    cursive;
+  --font-mon:'Montserrat',
+    sans-serif;
+  --small-size: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid rgb(244, 244, 246);
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0 5px 5px 0 rgba(75, 78, 229, 0.474);
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #6462ea, #796aea, #8b72e9, #9a7ae9, #a883e9);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section h3 {
+  font-family: var(--font-edu);
+  font-size: 2rem;
+  margin: 0.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input, textarea {
+  display: block;
+  font-size: 1.5rem;
+  margin: var(--small-size);
+  padding: var(--small-size);
+  border-radius: var(--small-size);
+  width: 30rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section h4 {
+  font-family: var(--font-mon);
+  font-size: 1.7rem;
+  height: fit-content;
+  width: 30rem;
+  border: 1px whitesmoke solid;
+  padding: var(--small-size);
+  margin: var(--small-size);
 }
